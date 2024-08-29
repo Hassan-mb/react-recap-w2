@@ -4,15 +4,13 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import BookList from "./components/BookList";
 import BookDetail from "./components/BookDetail";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Home />
-      <BookList />
-
-      <BookDetail />
+      <Outlet />
     </div>
   );
 }
